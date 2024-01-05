@@ -3,3 +3,12 @@
   [1m[36mPlayer Create (1.9ms)[0m  [1m[32mINSERT INTO "players" ("name", "stats", "age", "team", "draft_year", "season_start", "season_end", "prev_teams", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Lebron James"], ["stats", "2023:25-07-08-1.2-0.8-0.43-0.38**2022:27-6-8-1.1-0.9-0.45-0.40"], ["age", 40], ["team", "Los Angeles Lakers"], ["draft_year", nil], ["season_start", nil], ["season_end", nil], ["prev_teams", "Los Angeles Lakers**Cleveland Cavaliers"], ["created_at", "2024-01-05 18:14:41.359672"], ["updated_at", "2024-01-05 18:14:41.359672"]]
   [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlayer Create (1.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "stats", "age", "team", "draft_year", "season_start", "season_end", "prev_teams", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Lebron James"], ["stats", "2023:25-07-08-1.2-0.8-0.43-0.38**2022:27-6-8-1.1-0.9-0.45-0.40"], ["age", 40], ["team", "Los Angeles Lakers"], ["draft_year", nil], ["season_start", nil], ["season_end", nil], ["prev_teams", "Los Angeles Lakers**Cleveland Cavaliers"], ["created_at", "2024-01-05 18:17:30.101879"], ["updated_at", "2024-01-05 18:17:30.101879"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3515382434607903090)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3515382434607903090)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
