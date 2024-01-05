@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  stats: MyString
+  age: 1
+  team: MyString
+  draft_year: MyString
+  season_start: MyString
+  season_end: MyString
+  prev_teams: MyString
+
+two:
+  name: MyString
+  stats: MyString
+  age: 1
+  team: MyString
+  draft_year: MyString
+  season_start: MyString
+  season_end: MyString
+  prev_teams: MyString
