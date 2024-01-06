@@ -17,3 +17,211 @@
   [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3515382434607903090)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/add_all" for 127.0.0.1 at 2024-01-05 18:53:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/add_all"):
+  
+Started GET "/players" for 127.0.0.1 at 2024-01-05 18:54:30 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/players_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/add_all" for 127.0.0.1 at 2024-01-05 18:55:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/add_all"):
+  
+Started GET "/add_all" for 127.0.0.1 at 2024-01-05 18:55:53 -0500
+Processing by PlayersController#add_all as */*
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 22252)
+
+
+  
+NameError (undefined local variable or method `csv_file_path' for #<PlayersController:0x00000000012c50>):
+  
+app/controllers/players_controller.rb:6:in `add_all'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 18:56:11 -0500
+Processing by PlayersController#add_all as */*
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+  
+NameError (undefined local variable or method `csv_file_path' for #<PlayersController:0x00000000016238>):
+  
+app/controllers/players_controller.rb:6:in `add_all'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 18:56:30 -0500
+Processing by PlayersController#add_all as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 152)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /csv-file/all_players_stats.csv):
+  
+app/controllers/players_controller.rb:6:in `add_all'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 18:58:01 -0500
+Processing by PlayersController#add_all as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - csv-file/all_players_stats.csv):
+  
+app/controllers/players_controller.rb:6:in `add_all'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:00:43 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/players_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:00:55 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:11: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/players_controller.rb:11: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:01:05 -0500
+Processing by PlayersController#add_all as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 78)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:01:07 -0500
+Processing by PlayersController#add_all as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 21)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:01:17 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 161)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:04:39 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:7: syntax error, unexpected ':', expecting `end'
+            render json : {msg: "Found!"}
+                        ^
+/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render json : {error: "Not found :()}
+                        ^
+/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:12: unterminated string meets end of file
+/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:12: syntax error, unexpected end-of-input, expecting '}'):
+  
+app/controllers/players_controller.rb:7: syntax error, unexpected ':', expecting `end'
+app/controllers/players_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/players_controller.rb:12: unterminated string meets end of file
+app/controllers/players_controller.rb:12: syntax error, unexpected end-of-input, expecting '}'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:04:53 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:7: syntax error, unexpected ':', expecting `end'
+            render json : {msg: "Found!"}
+                        ^
+/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render json : {error: "Not found : ("}
+                        ^
+):
+  
+app/controllers/players_controller.rb:7: syntax error, unexpected ':', expecting `end'
+app/controllers/players_controller.rb:9: syntax error, unexpected ':', expecting `end'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:05:25 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 137)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:05:30 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:05:35 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:05:42 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:05:57 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:06:06 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:06:17 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:06:41 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:06:44 -0500
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:10:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- dotenv/load):
+  
+app/controllers/players_controller.rb:2:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-01-05 19:10:44 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hasithdealwis/.rvm/gems/ruby-3.0.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hasithdealwis/.rvm/gems/ruby-3.0.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 525)
+Completed 200 OK in 19ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-01-05 19:10:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2024-01-05 19:10:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2024-01-05 19:10:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:10:56 -0500
+  
+LoadError (cannot load such file -- dotenv/load):
+  
+app/controllers/players_controller.rb:2:in `<main>'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:12:11 -0500
+  
+LoadError (cannot load such file -- dotenv/load):
+  
+app/controllers/players_controller.rb:2:in `<main>'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:14:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#add_all as */*
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 19436)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:16:07 -0500
+  
+SyntaxError (/Users/hasithdealwis/Library/Mobile Documents/com~apple~CloudDocs/Projects/NBA_2024_2025/NBA-STATS-2024-2025/Rails_App/app/controllers/players_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/players_controller.rb:10: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:16:16 -0500
+Processing by PlayersController#add_all as */*
+Completed 204 No Content in 802ms (ActiveRecord: 0.0ms | Allocations: 1657563)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:19:42 -0500
+Processing by PlayersController#add_all as */*
+Completed 204 No Content in 381ms (ActiveRecord: 0.0ms | Allocations: 1102127)
+
+
+Started POST "/add_all" for 127.0.0.1 at 2024-01-05 19:19:57 -0500
+Processing by PlayersController#add_all as */*
+Completed 204 No Content in 399ms (ActiveRecord: 0.0ms | Allocations: 1102119)
+
+

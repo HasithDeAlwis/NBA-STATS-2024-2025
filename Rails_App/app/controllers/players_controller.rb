@@ -1,8 +1,12 @@
 require 'csv'
-csv_file_path = '/csv-file/all_players_stats.csv'
+require 'dotenv/load'
+require 'rubypython'
 
 class PlayersController < ApplicationController
     def add_all()
-        CSV.foreach(csv_file_path, headers: true) do |row|
-            print(row['id'])
+        csv_file_path = ENV['CSV_PATH']
+        prev_player = CSV.read(csv_file_path)[1]
+        puts prev_player
+       
+    end
 end
