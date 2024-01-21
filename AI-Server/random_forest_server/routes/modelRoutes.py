@@ -13,16 +13,9 @@ def testModel():
     data = request.get_json()
     data = data["stats"]
     
-    
-    models = importModels()
-    scaler = importScaler()
-    
     input_df = pd.DataFrame([data])
     
-    
-    df = loadData()
-    
-    predictions = getPredictions()
+    predictions = getPredictions(input_df)
     return make_response(jsonify({'result': predictions}))
     
     
